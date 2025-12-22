@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+}
+
+.header {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:baseline;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.menu a {
+    margin-right: 15px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content {
+    padding: 40px;
+}
+
+.text {
+    width: 50%;
+    float: right;
+}
+
+.image {
+    width: 40%;
+    float: left;
+}
+
+.image img {
+    width: 100%;
+    border: 1px solid black;
+}
+
+h1 {
+    color: black;
+}
+
+p {
+    margin-top: 20px;
+    color:gray
+}
