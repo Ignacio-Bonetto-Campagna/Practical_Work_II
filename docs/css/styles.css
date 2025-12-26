@@ -44,7 +44,7 @@ body {
     clear: both;
 }
 
-.content {
+.index {
     background-color: #e0e0e0;
     padding: 40px;
 }
@@ -64,6 +64,16 @@ body {
     color: #333333;  
     font-family: "Times New Roman", Serif; 
     margin-bottom: 20px;
+}
+
+.about_me {
+    background-color: #e0e0e0;
+    padding: 40px;
+}
+
+.about_me_text {
+    width: 50%;
+    float: right;
 }
 
 input[type="text"], 
