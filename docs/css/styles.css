@@ -49,6 +49,12 @@ body {
     padding: 40px;
 }
 
+.index::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .index_text {
     width: 50%;
     float: right;
@@ -64,16 +70,6 @@ body {
     color: #333333;  
     font-family: "Times New Roman", Serif; 
     margin-bottom: 20px;
-}
-
-.about_me {
-    background-color: #e0e0e0;
-    padding: 40px;
-}
-
-.about_me_text {
-    width: 50%;
-    float: right;
 }
 
 input[type="text"], 
@@ -98,6 +94,44 @@ input[type="submit"] {
     margin-top: 20px;          
 }
 
+.about_me {
+    background-color: #e0e0e0;
+    padding: 40px;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    overflow: auto;  
+}
+
+.about_me_text {
+    width: 50%;
+    float: left;
+}
+
+.about_image {
+    width: 40%;
+    float: right;
+}
+
+.about_image img {
+    width: 100%;
+    border: 2px solid #333;
+}
+
+.about_image_left {
+    width: 40%;
+    float: left;
+}
+
+.about_image_left img {
+    width: 100%;
+    border: 2px solid #333;
+}
+
+.about_me_text_right {
+    width: 50%;
+    float: right;
+}
+
 .image {
     width: 45%;
     float: left;
@@ -110,6 +144,11 @@ input[type="submit"] {
 
 h1 {
     font-size: 40px;
+    color: #333;
+}
+
+h2 {
+    font-size: 30px;
     color: #333;
 }
 
