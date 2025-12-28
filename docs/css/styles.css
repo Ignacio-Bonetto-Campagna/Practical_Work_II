@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: Times New Roman;
+    font-family: "Times New Roman", serif;
     color: black;
 }
 
@@ -14,20 +14,11 @@ body {
     border-bottom: 1px solid #ccc;
     display: flex;
     align-items: center;
-    justify-content:baseline;
-    
-}
-
-.logo {
-    float: left;
+    justify-content: baseline;
 }
 
 .logo img {
     width: 100px;
-}
-
-.menu {
-    float: right;
 }
 
 .menu a {
@@ -36,12 +27,6 @@ body {
     text-decoration: none;
     font-weight: bold;
     font-size: 22px;
-}
-
-.header::after {
-    content: "";
-    display: block;
-    clear: both;
 }
 
 .index {
@@ -66,32 +51,31 @@ body {
 }
 
 .form_text {
-    font-size: 20px; 
-    color: #333333;  
-    font-family: "Times New Roman", Serif; 
+    font-size: 20px;
+    color: #333;
     margin-bottom: 20px;
 }
 
-input[type="text"], 
-input[type="email"], 
+input[type="text"],
+input[type="email"],
 textarea {
-    width: 100%;    
-    height: 30px;   
-    padding: 10px;  
-    margin-top: 5;
-    box-sizing: border-box; 
-    border: 2px solid black; 
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 2px solid black;
 }
 
 input[type="submit"] {
-    width: 100%;             
-    padding: 15px;           
-    font-size: 22px;         
-    font-weight: bold;      
-    background-color: green;  
-    color: white;            
-    border: none;                  
-    margin-top: 20px;          
+    width: 100%;
+    padding: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: green;
+    color: white;
+    border: none;
+    margin-top: 20px;
 }
 
 .about_me {
@@ -99,7 +83,7 @@ input[type="submit"] {
     padding: 40px;
     border-top: 1px solid #999;
     border-bottom: 1px solid #999;
-    overflow: auto;  
+    overflow: auto;
 }
 
 .about_me_text {
@@ -107,29 +91,128 @@ input[type="submit"] {
     float: left;
 }
 
-.about_image {
+.about_image,
+.about_image_left {
     width: 40%;
+}
+
+.about_image {
     float: right;
 }
 
-.about_image img {
-    width: 100%;
-    border: 2px solid #333;
-}
-
 .about_image_left {
-    width: 40%;
     float: left;
 }
 
+.about_image img,
 .about_image_left img {
     width: 100%;
     border: 2px solid #333;
 }
 
-.about_me_text_right {
-    width: 50%;
+.topic {
+    background-color: #e0e0e0;
+    padding: 40px;
+    border-bottom: 1px solid #999;
+    overflow: auto;
+}
+
+.topic h1 {
+    color: #0c7db1;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.topic_left_text {
+    width: 55%;
+    float: left;
+}
+
+.topic_right_text {
+    width: 55%;
     float: right;
+}
+
+.topic_left_image {
+    width: 40%;
+    float: left;
+    margin-right: 20px;
+}
+
+.topic_right_image {
+    width: 40%;
+    float: right;
+    margin-left: 20px;
+}
+
+.topic_left_image img,
+.topic_right_image img {
+    width: 100%;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.topic_right_text h1,
+.topic_left_text h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.topic_right_text h2,
+.topic_left_text h2 {
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.topic_right_text h3,
+.topic_left_text h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.topic_right_text p,
+.topic_left_text p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.topic::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.Sources {
+    background-color: #e0e0e0;
+    padding: 60px 40px;
+    border-top: 1px solid #999;
+    text-align: center;        
+    clear: both;               
+    overflow: auto;           
+}
+
+.Sources h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.Sources ul {
+    list-style-position: inside; 
+    padding: 0;
+}
+
+.Sources li {
+    margin-bottom: 15px;
+    list-style-type: none;     
+}
+
+.Sources a {
+    color: #0c7db1;
+    text-decoration: underline;
+    font-size: 18px;
 }
 
 .image {
@@ -143,12 +226,17 @@ input[type="submit"] {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 45px;
     color: #333;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 35px;
+    color: #333;
+}
+
+h3 {
+    font-size: 28px;
     color: #333;
 }
 
@@ -156,12 +244,6 @@ p {
     margin-top: 20px;
     color: #555;
     font-size: 20px;
-}
-
-.content::after {
-    content: "";
-    display: block;
-    clear: both;
 }
 
 .footer {
